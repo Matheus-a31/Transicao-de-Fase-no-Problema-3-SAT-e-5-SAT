@@ -32,11 +32,6 @@ Os experimentos revelaram uma clara transição de fase para ambos os problemas,
 
 O gráfico de probabilidade mostra uma queda acentuada em torno de $$\alpha_c$$, e o gráfico de tempo confirma que as instâncias mais difíceis se concentram nessa região.
 
-\<p align="center"\>
-\<img src="3-SAT\_probabilidade.png" alt="Probabilidade 3-SAT" width="48%"\>
-\&nbsp;
-\<img src="3-SAT\_tempo.png" alt="Tempo 3-SAT" width="48%"\>
-\</p\>
 
 ### 5-SAT
 
@@ -45,11 +40,7 @@ O gráfico de probabilidade mostra uma queda acentuada em torno de $$\alpha_c$$,
 
 O 5-SAT também exibe uma transição de fase, mas seu ponto crítico ocorre em um valor de $$\alpha$$ significativamente mais alto que o do 3-SAT. O tempo de execução no pico também é maior, indicando uma complexidade superior. 
 
-\<p align="center"\>
-\<img src="5-SAT\_probabilidade.png" alt="Probabilidade 5-SAT" width="48%"\>
-\&nbsp;
-\<img src="5-SAT\_tempo.png" alt="Tempo 5-SAT" width="48%"\>
-\</p\>
+
 
 ## 🚀 Como Executar
 
@@ -61,15 +52,7 @@ O projeto foi desenvolvido em um notebook do Google Colab. Para reproduzir os re
 
 ### Instalação
 
-Clone o repositório e instale as dependências necessárias:
-
-```bash
-git clone <URL-DO-SEU-REPOSITORIO>
-cd <NOME-DO-DIRETORIO>
-pip install -r requirements.txt
-```
-
-Se não houver um `requirements.txt`, instale as bibliotecas manualmente:
+Clone o repositório e baixe a matplotlib(caso não tenha)
 
 ```bash
 pip install python-sat numpy matplotlib
@@ -88,5 +71,6 @@ pip install python-sat numpy matplotlib
   * [Google Colab](https://colab.research.google.com/) 
   * [PySAT](https://pysathq.github.io/) (Solver Glucose4) 
   * [NumPy](https://numpy.org/) 
-  * [cite\_start][Matplotlib](https://matplotlib.org/) [cite: 141]
+  * [Matplotlib](https://matplotlib.org/) 
+
 
