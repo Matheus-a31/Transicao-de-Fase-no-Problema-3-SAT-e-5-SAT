@@ -2,7 +2,7 @@
 
 Este repositório contém o código e os resultados de um trabalho prático para a disciplina de Lógica para Computação. O projeto investiga e compara o fenômeno da transição de fase nos problemas 3-SAT e 5-SAT.
 
-## 📜 Sobre o Projeto
+## Sobre o Projeto
 
 O Problema de Satisfatibilidade Booleana (SAT) é central para a ciência da computação. Este projeto foca em uma característica fascinante de problemas NP-completos como o k-SAT: a **transição de fase**.  Trata-se de um ponto crítico na razão entre o número de cláusulas ($$m$$) e o número de variáveis ($$n$$), conhecida como $$\alpha$$, onde a probabilidade de uma fórmula ser satisfatível (SAT) despenca abruptamente de 1 para 0.
 
@@ -13,7 +13,7 @@ O objetivo deste trabalho é:
   * Analisar a probabilidade de satisfatibilidade e o tempo médio de execução em função da razão $$\alpha$$.
   * Estimar e comparar os pontos críticos ($$\alpha_c$$) para ambos os casos, 3-SAT e 5-SAT. 
 
-## 🛠️ Metodologia
+## Metodologia
 
 A abordagem foi dividida em módulos para gerar instâncias, executar os experimentos e plotar os resultados. 
 
@@ -21,7 +21,7 @@ A abordagem foi dividida em módulos para gerar instâncias, executar os experim
 2. **Execução do Experimento (`executar_experimento`)**: Para um conjunto de variáveis `n` e uma faixa de valores `alpha`, 30 instâncias foram geradas e resolvidas. O solver `Glucose4` (da biblioteca `PySAT`) foi utilizado para verificar a satisfatibilidade e medir o tempo de execução. 
 3.  **Análise do Ponto Crítico (`pegar_alfa_critico`)**: O ponto crítico ($$\alpha_c$$) foi estimado como o valor de `alpha` onde o tempo médio de execução do solver atinge seu pico máximo, indicando a região de maior dificuldade computacional. 
 
-## 📊 Resultados
+## Resultados
 
 Os experimentos revelaram uma clara transição de fase para ambos os problemas, com picos de dificuldade computacional concentrados em torno de um valor crítico $$\alpha_c$$.
 
@@ -42,7 +42,7 @@ O 5-SAT também exibe uma transição de fase, mas seu ponto crítico ocorre em 
 
 
 
-## 🚀 Como Executar
+## Como Executar
 
 O projeto foi desenvolvido em um notebook do Google Colab. Para reproduzir os resultados, siga os passos abaixo:
 
@@ -65,12 +65,13 @@ pip install python-sat numpy matplotlib
       * **Atenção**: A célula que executa `executar_experimento()` é computacionalmente intensiva e pode levar cerca de 40 minutos para ser concluída para 30 instâncias. 
 3.  Após a execução, os gráficos `3-SAT_probabilidade.png`, `3-SAT_tempo.png`, `5-SAT_probabilidade.png` e `5-SAT_tempo.png` serão salvos no diretório.
 
-## 🛠️ Desenvolvido Com
+## Desenvolvido Com
 
   * [Python 3](https://www.python.org/)
   * [Google Colab](https://colab.research.google.com/) 
   * [PySAT](https://pysathq.github.io/) (Solver Glucose4) 
   * [NumPy](https://numpy.org/) 
   * [Matplotlib](https://matplotlib.org/) 
+
 
 
